@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "ruin"
 include ':app'
+include ':library'
