@@ -32,4 +32,8 @@ object Ruin: RuinInterface {
     override fun existXposed(): Boolean = checkXposed()
 
     private external fun checkXposed(): Boolean
+
+    init {
+        System.loadLibrary("ruin")
+    }
 }

@@ -16,5 +16,6 @@ add_library( # Sets the name of the library.
 
 target_link_libraries(
         # 指定目标库
-        exp82464
+        # exp82464
+        ruin
 )
