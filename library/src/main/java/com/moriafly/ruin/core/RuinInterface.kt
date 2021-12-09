@@ -7,4 +7,9 @@ internal interface RuinInterface {
      */
     fun existBlackClass(): Boolean
 
+    /**
+     * 是否存在 Xposed 环境
+     */
+    fun existXposed(): Boolean
+
 }

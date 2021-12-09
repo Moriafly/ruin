@@ -28,4 +28,7 @@ object Ruin: RuinInterface {
         true
     }
 
+    override fun existXposed(): Boolean = checkXposed()
+
+    private external fun checkXposed(): Boolean
 }
