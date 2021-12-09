@@ -1,3 +1,5 @@
+@file:Suppress("unused", "UNUSED_PARAMETER")
+
 /**
  * Copyright (C) 2021 Moriafly
  *
@@ -24,9 +26,9 @@ object Ruin: RuinInterface {
         ClassBlacklist.blacklist.forEach { className ->
             Class.forName(className)
         }
-        false
-    } catch (e: ClassNotFoundException) {
         true
+    } catch (e: ClassNotFoundException) {
+        false
     }
 
     override fun existXposed(): Boolean = checkXposed()

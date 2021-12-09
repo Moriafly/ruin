@@ -1,5 +1,5 @@
 ext {
-    app_version = "1.0.0-dev07"
+    app_version = "1.0.0-dev08"
 }
 
 buildscript {
