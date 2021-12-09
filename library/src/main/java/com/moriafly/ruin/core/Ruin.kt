@@ -19,6 +19,7 @@ package com.moriafly.ruin.core
 
 object Ruin: RuinInterface {
 
+    @UnstableApi
     override fun existBlackClass(): Boolean = try {
         ClassBlacklist.blacklist.forEach { className ->
             Class.forName(className)

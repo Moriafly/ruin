@@ -1,3 +1,5 @@
+@file:Suppress("unused", "UNUSED_PARAMETER")
+
 /**
  * Copyright (C) 2021 Moriafly
  *
@@ -17,17 +19,10 @@
 
 package com.moriafly.ruin.core
 
-internal interface RuinInterface {
+@RequiresOptIn("This api is not stable.", RequiresOptIn.Level.WARNING)
+@MustBeDocumented
+annotation class UnstableApi
 
-    /**
-     * 是否存在不正常的类 [ClassBlacklist]
-     */
-    @UnstableApi
-    fun existBlackClass(): Boolean
-
-    /**
-     * 是否存在 Xposed 环境
-     */
-    fun existXposed(): Boolean
-
-}
+@RequiresOptIn("This api is removed.", RequiresOptIn.Level.ERROR)
+@MustBeDocumented
+annotation class UnsupportedApi

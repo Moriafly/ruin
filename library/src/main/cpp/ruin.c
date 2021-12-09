@@ -1,3 +1,4 @@
+#include <jni.h>
 /**
  * Copyright (C) 2021 Moriafly
  *
@@ -19,7 +20,7 @@
 #include <stdbool.h>
 
 JNIEXPORT jboolean JNICALL
-Java_com_moriafly_ruin_core_Ruin_checkXposed(JNIEnv *env, jobject thiz) {
+Java_com_moriafly_ruin_core_Ruin_checkXposed(JNIEnv *env, __unused jobject thiz) {
     jclass classloaderClass = (*env)->FindClass(env, "java/lang/ClassLoader");
     jmethodID getSysLoaderMethod = (*env)->GetStaticMethodID(env, classloaderClass,
                                                              "getSystemClassLoader",

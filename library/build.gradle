@@ -10,7 +10,7 @@ android {
         minSdk 19
         targetSdk 31
         versionCode 1
-        versionName "0.0.1"
+        versionName "1.0.0-dev01"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -30,6 +30,7 @@ android {
 
     kotlinOptions {
         jvmTarget = '1.8'
+        freeCompilerArgs += "-Xopt-in=kotlin.RequiresOptIn"
     }
 
     externalNativeBuild {
